@@ -114,7 +114,7 @@ function installAmneziaWG() {
     installQuestions
 
 apt update
-apt install mc git make build-essential wireguard wireguard-tools -y
+apt install mc git make build-essential wireguard wireguard-tools iptables mtr net-tools -y
 mkdir /root/AWG
 cd /root/AWG
 git clone https://github.com/Sarabanga/amneziawg-tools
