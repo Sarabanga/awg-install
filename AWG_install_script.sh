@@ -266,7 +266,7 @@ AllowedIPs = 0.0.0.0/0
 Endpoint = $IP:$(grep ListenPort /etc/amnezia/amneziawg/${SERVER_WG_NIC}.conf | cut -d " " -f 3)
 PersistentKeepalive = 25
 EOF
-#/usr/bin/awg syncconf ru2 <(/usr/bin/awg-quick strip ru2)
+/usr/bin/awg syncconf ${SERVER_WG_NIC} <(/usr/bin/awg-quick strip ${SERVER_WG_NIC})
 
 }
 
