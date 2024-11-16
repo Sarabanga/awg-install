@@ -132,6 +132,7 @@ make install
 cd /root/AWG/amneziawg-go/
 make
 cp /root/AWG/amneziawg-go/amneziawg-go /bin
+ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf
 
     SERVER_PRIV_KEY=$(awg genkey)
     SERVER_PUB_KEY=$(echo "${SERVER_PRIV_KEY}" | awg pubkey)
